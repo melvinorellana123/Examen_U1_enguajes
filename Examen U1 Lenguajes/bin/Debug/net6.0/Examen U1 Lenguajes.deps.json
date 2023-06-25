@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Examen U1 Lenguajes/1.0.0": {
+        "runtime": {
+          "Examen U1 Lenguajes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Examen U1 Lenguajes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

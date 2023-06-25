@@ -1,0 +1,21 @@
+﻿@model NotacionPolacaInversa
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <form method="post"asp-action="Obtener">
+        <div class=" col-auto bg-success text-light">
+            <h3 class="text-center p-3">Notacion Polaca Inversa </h3>
+        </div>
+        <div class="row gap-3 justify-content-center">
+            <div class="col-6">
+                <label for="Valor" class="form-label m-2">Ingrese su Notacion</label>
+                <input name="Valor" asp-for="Valor" type="text" class="form-control"/>
+            </div>
+             
+        </div>
+        <button type="submit"  class=" btn btn-success d-block">Enviar</button>
+    </form>
+
