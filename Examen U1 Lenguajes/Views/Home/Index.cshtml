@@ -1,21 +1,30 @@
-﻿@model NotacionPolacaInversa
+﻿@model NotacionPolacaInversaViewModel
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 
-    <form method="post"asp-action="Obtener">
-        <div class=" col-auto bg-success text-light">
-            <h3 class="text-center p-3">Notacion Polaca Inversa </h3>
+<form asp-action="Obtener" asp-controller="Home" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class=" col-auto bg-success text-light">
+        <h3 class="text-center p-3">Notacion Polaca Inversa </h3>
+    </div>
+    <div class="row gap-3 justify-content-center">
+        <div class="col-6">
+            <label for="Valor" class="form-label m-2">Ingrese su Notacion</label>
+            <input asp-for="NotacionPolacaInversaValor" type="text" class="form-control"/>
+            <span asp-validation-for="NotacionPolacaInversaValor" class="text-danger"></span>
         </div>
-        <div class="row gap-3 justify-content-center">
-            <div class="col-6">
-                <label for="Valor" class="form-label m-2">Ingrese su Notacion</label>
-                <input name="Valor" asp-for="Valor" type="text" class="form-control"/>
-            </div>
-             
+        <div class="col-6">
+            <label asp-for="Resultado" class="form-label m-2">Resultado</label>
+            <h1>@Model.Resultado</h1>
         </div>
-        <button type="submit"  class=" btn btn-success d-block">Enviar</button>
-    </form>
+    </div>
+    <button type="submit" class=" btn btn-success d-block">Enviar</button>
+</form>
 
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial"/>
+}

@@ -1,12 +1,8 @@
-using Examen_U1_Lenguajes.Models.Interfaces;
-using Examen_U1_Lenguajes.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<INotacionPolacaInversa, RepositorioNotacionPolacaInversa>();
-var app = builder.Build();
+ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

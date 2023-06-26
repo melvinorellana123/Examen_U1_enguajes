@@ -1,7 +1,6 @@
 ﻿namespace Examen_U1_Lenguajes.Models;
 
-public class NotacionPolacaInversaViewModel
+public class NotacionPolacaInversaViewModel : NotacionPolacaInversa
 {
-   public string NotacionPolacaInversas { get; set; }
-      
+    public string? Resultado { get; set; } = 0.0.ToString("N");
 }
